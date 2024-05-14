@@ -91,7 +91,9 @@ function estimateTotalPrice() {
     
     discountedRoomCostOutput.innerHTML = "$" + discountedPrice.toFixed(2); 
     
-    tax = 0.12 * discountedPrice;
+    let taxRate = 0.12;
+    
+    tax = taxRate * discountedPrice;
     
     taxOutPut.innerHTML = "$" + tax.toFixed(2);
     
